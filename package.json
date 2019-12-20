@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "split-on-last",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Like split-on-first but splits on the last occurence.",
+    "repository": "https://github.com/Richienb/split-on-last.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,13 +11,20 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "string",
+        "split",
+        "last",
+        "seperator",
+        "delimiter",
+        "text"
+    ],
     "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",
@@ -25,7 +32,7 @@
         "xo": "^0.25.3"
     },
     "resolutions": {
-        "eslint": "^6.6.0"
+        "eslint": "^6.7.2"
     },
     "xo": {
         "extends": "richienb/node"

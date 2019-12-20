@@ -1,41 +1,48 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Split on last [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/split-on-last/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/split-on-last)
 
-My awesome module.
+Like [split-on-first](https://github.com/sindresorhus/split-on-first) but splits on the last occurence.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/split-on-last.png)](https://npmjs.com/package/split-on-last)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install split-on-last
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const splitOnlast = require('split-on-last');
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+splitOnlast('a-b-c', '-');
+//=> ['a-b', 'c']
+
+splitOnlast('key:value:value2', ':');
+//=> ['key:value', 'value2']
+
+splitOnlast('a---b---c', '---');
+//=> ['a---b', 'c']
+
+splitOnlast('a-b-c', '+');
+//=> []
+
+splitOnlast('abc', '');
+//=> []
 ```
 
 ## API
 
-### theModule(input, options?)
+### splitOnLast(string, seperator)
 
-#### input
+#### string
 
 Type: `string`
 
-Lorem ipsum.
+The string to split.
 
-#### options
+#### seperator
 
-Type: `object`
+Type: `string`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The separator to split on.
