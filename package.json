@@ -1,6 +1,6 @@
 {
     "name": "split-on-last",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Like split-on-first but splits on the last occurence.",
     "repository": "https://github.com/Richienb/split-on-last.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
